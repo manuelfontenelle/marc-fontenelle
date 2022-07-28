@@ -92,7 +92,7 @@ header nav ul li a:before {
   display: block;
 }
 .intro__bio__photo {
-  width: 250px;
+  width: 15vw;
   object-fit: cover;
 }
 .intro__bandeau-texte {
@@ -101,7 +101,7 @@ header nav ul li a:before {
   align-items: end;
   width: 100%;
   bottom: 100px;
-  height: 10vh;
+  height: 11vh;
 }
 .intro__bandeau-texte__image {
   width: 60px;
