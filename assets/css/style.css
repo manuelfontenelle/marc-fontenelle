@@ -73,6 +73,7 @@ header nav ul li a:before {
 .intro {
   margin-top: 5vh;
   height: 85vh;
+  position: relative;
 }
 .intro__title {
   font-size: 85px;
@@ -94,7 +95,9 @@ header nav ul li a:before {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  margin-top: 80px;
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
 }
 .intro__bandeau-texte__image {
   width: 60px;
