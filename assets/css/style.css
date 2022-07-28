@@ -102,12 +102,13 @@ header nav ul li a:before {
   width: 100%;
   bottom: 100px;
   height: 11vh;
+  color: #fcf8e8;
 }
 .intro__bandeau-texte__image {
   width: 60px;
 }
 .intro__bandeau-texte__bloc-texte {
-  color: white;
+  color: #fcf8e8;
   width: 35%;
   font-size: 22px;
   line-height: 1.3em;
@@ -116,11 +117,9 @@ header nav ul li a:before {
 }
 .intro__bandeau-texte__bloc-texte span {
   display: block;
-  color: white;
 }
 .intro__bandeau-texte__bloc-titre {
   font-weight: 600;
-  color: white;
   width: 50%;
   font-size: 75px;
   text-transform: uppercase;
@@ -129,7 +128,6 @@ header nav ul li a:before {
 }
 .intro__bandeau-texte__bloc-titre span {
   display: block;
-  color: white;
 }
 
 form {
