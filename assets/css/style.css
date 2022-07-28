@@ -14,7 +14,7 @@ body {
 .container {
   max-width: 1400px;
   margin: auto;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 header {
@@ -71,11 +71,15 @@ header nav ul li a:before {
 }
 
 .intro {
-  margin-top: 5vh;
-  height: 85vh;
   position: relative;
 }
-.intro__title {
+.intro__bio {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.intro__bio__title {
   font-size: 85px;
   line-height: 0.9em;
   text-transform: uppercase;
@@ -84,10 +88,10 @@ header nav ul li a:before {
   margin-bottom: 30px;
   color: #fcf8e8;
 }
-.intro__title span {
+.intro__bio__title span {
   display: block;
 }
-.intro__photo {
+.intro__bio__photo {
   width: 250px;
   object-fit: cover;
 }
@@ -95,9 +99,9 @@ header nav ul li a:before {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  position: absolute;
   width: 100%;
-  bottom: 50px;
+  bottom: 100px;
+  height: 10vh;
 }
 .intro__bandeau-texte__image {
   width: 60px;
