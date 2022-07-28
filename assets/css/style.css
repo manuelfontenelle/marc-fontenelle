@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&display=swap");
+body {
+  background-color: #2a2a2a;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+@media (min-width: 576px) {
+  body {
+    font-size: 70px;
+  }
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  width: 100px;
+}
+header nav {
+  width: 500px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li {
+  display: flex;
+  align-items: center;
+}
+header nav ul li a {
+  font-weight: 600;
+  font-size: 16px;
+  display: block;
+  text-transform: uppercase;
+  color: #fcf8e8;
+  text-decoration: none;
+  letter-spacing: 4px;
+  opacity: 0.75;
+  position: relative;
+  padding: 20px 0px;
+}
+header nav ul li a:hover {
+  opacity: 1;
+}
+header nav ul li a:hover:before {
+  width: 97%;
+}
+header nav ul li a:before {
+  transition: 600ms;
+  height: 3px;
+  content: "";
+  position: absolute;
+  background-color: #fcf8e8;
+  width: 0%;
+  bottom: 10px;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  margin-top: 5vh;
+  height: 85vh;
+}
+.intro__title {
+  font-size: 85px;
+  line-height: 0.9em;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #fcf8e8;
+}
+.intro__title span {
+  display: block;
+}
+.intro__photo {
+  width: 250px;
+  object-fit: cover;
+}
+.intro__bandeau-texte {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 80px;
+}
+.intro__bandeau-texte__image {
+  width: 60px;
+}
+.intro__bandeau-texte__bloc-texte {
+  color: white;
+  width: 35%;
+  font-size: 22px;
+  line-height: 1.3em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.intro__bandeau-texte__bloc-texte span {
+  display: block;
+  color: white;
+}
+.intro__bandeau-texte__bloc-titre {
+  font-weight: 600;
+  color: white;
+  width: 50%;
+  font-size: 75px;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 0.9em;
+}
+.intro__bandeau-texte__bloc-titre span {
+  display: block;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+input,
+textarea {
+  height: 50px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  font-size: inherit;
+  padding: 5px 10px;
+  font-family: inherit;
+  font-weight: inherit;
+  border: 1px var(--grey) solid;
+  border-radius: 6px;
+  outline: none;
+}
+
+textarea {
+  height: 150px;
+  padding: 10px 10px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--grey);
+}
+
+button {
+  background-color: var(--black);
+  cursor: pointer;
+  color: var(--white);
+  height: 50px;
+  font-size: 16px;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+button:hover {
+  background-color: var(--black-opacity);
+}
+
+.disabled-btn {
+  background-color: var(--grey);
+  color: var(--black);
+}
+
+.disabled-btn:hover {
+  background-color: var(--grey);
+  color: var(--black);
+}
+
+.title-cat {
+  font-size: 70px;
+  line-height: 0.9em;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 600;
+  margin: 60px 0;
+  color: #fcf8e8;
+  letter-spacing: 5px;
+}
+
+.works {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.works.mt {
+  margin-top: 150px;
+}
+.works__left {
+  width: 66%;
+  color: white;
+  height: 470px;
+}
+.second .works__left {
+  margin-top: -200px;
+  width: 32%;
+}
+.works__left img {
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+}
+.second .works__left img {
+  height: 450px;
+}
+.works__left__title {
+  margin: 15px 0 10px 0;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.works__left__desc {
+  font-weight: 300;
+  font-size: 20px;
+}
+.works__right {
+  width: 32%;
+  color: white;
+  text-align: right;
+}
+.second .works__right {
+  width: 66%;
+}
+.works__right img {
+  width: 100%;
+  height: 690px;
+  object-fit: cover;
+}
+.second .works__right img {
+  height: 470px;
+}
+.works__right__title {
+  margin: 15px 0 10px 0;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.works__right__desc {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/*# sourceMappingURL=style.css.map */
