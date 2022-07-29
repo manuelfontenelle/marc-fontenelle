@@ -1,8 +1,20 @@
 const $ = document
 
 $.addEventListener("DOMContentLoaded", () => {
+	mybutton = document.getElementById("scrollTop")
+	mybutton.addEventListener("click", () => {
+		document.body.scrollTop = 0 // For Safari
+		document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
+	})
+	// const topFunction = () => {
+	// 	document.body.scrollTop = 0 // For Safari
+	// 	document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
+	// }
+
 	const form = $.querySelector("#contact-form")
 	const submitButton = $.querySelector("#submit-btn")
+
+	topFunction()
 
 	// Fonction pour vider les champs du formulaire :
 	const cleanForm = () => {
