@@ -148,7 +148,8 @@ footer nav ul li a:hover {
 }
 footer .copyright {
   font-weight: 600;
-  font-size: 13px;
+  font-size: 10px;
+  line-height: 1.2em;
   color: #6d6d6d;
   display: block;
   text-transform: uppercase;
@@ -389,22 +390,23 @@ footer .copyright {
 .menu-left.slide-in .content header nav ul {
   flex-direction: column;
 }
-.menu-left.slide-in .content header nav ul li {
-  margin-bottom: 20px;
-}
 .menu-left.slide-in .content header nav ul li a {
-  font-size: 25px;
+  font-size: 19px;
   opacity: 1;
 }
 .menu-left.slide-in .content .container-foot-mobile {
   position: absolute;
   bottom: 20px;
 }
+.menu-left.slide-in .content .container-foot-mobile .block-prefooter {
+  margin-bottom: 2vh;
+}
 .menu-left.slide-in .content .container-foot-mobile .block-prefooter .first-block .first-block__block-top {
-  font-size: 17px;
+  font-size: 15px;
 }
 .menu-left.slide-in .content .container-foot-mobile .block-prefooter .first-block .first-block__block-mail {
-  font-size: 26px;
+  padding-top: 25px;
+  font-size: 23px;
   line-height: 1.2em;
 }
 .menu-left.slide-in .content .container-foot-mobile footer nav ul {
@@ -414,13 +416,14 @@ footer .copyright {
   margin-right: 25px;
 }
 .menu-left.slide-in .content .container-foot-mobile footer nav ul li a {
-  font-size: 12px;
+  font-size: 11px;
 }
 .menu-left.slide-in .content .container-foot-mobile footer nav .nav-gauche {
   width: 70%;
 }
 .menu-left.slide-in .content .container-foot-mobile footer .copyright {
-  font-size: 13px;
+  margin: 10px 0 20px 0;
+  font-size: 10px;
 }
 .slide-in {
   transform: translate3d(0, 0, 0) !important;
@@ -594,7 +597,7 @@ footer .copyright {
 .block-prefooter .first-block__block-mail {
   padding-top: 50px;
   font-weight: 600;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: left;
@@ -610,8 +613,14 @@ footer .copyright {
 .block-prefooter .prefooter-arrowtop {
   transform: rotate(180deg);
   cursor: pointer;
-  width: 57px;
+  width: 45px;
 }
+@media (min-width: 992px) {
+  .block-prefooter .prefooter-arrowtop {
+    width: 57px;
+  }
+}
+
 form {
   display: flex;
   flex-direction: column;
