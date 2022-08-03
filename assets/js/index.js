@@ -1,6 +1,37 @@
 const $ = document
 
 $.addEventListener("DOMContentLoaded", () => {
+	// $(".burger2").click(function () {
+	// 	$(".burger2").toggleClass("open")
+	// })
+	burgerContainer = document.getElementById("burger-container")
+	burgerMenu = document.getElementById("burger")
+	menuLeft = document.getElementById("menu-left")
+
+	burgerContainer.addEventListener("click", () => {
+		// console.log("test")
+		menuOpen = document.getElementById("menu-open")
+		menuClose = document.getElementById("menu-close")
+		if (menuOpen.classList.contains("active")) {
+			// console.log("test2")
+			menuOpen.classList.remove("active")
+			menuClose.classList.add("active")
+			burgerMenu.classList.add("open")
+			menuLeft.classList.add("slide-in")
+		} else {
+			menuOpen.classList.add("active")
+			menuClose.classList.remove("active")
+			burgerMenu.classList.remove("open")
+			menuLeft.classList.remove("slide-in")
+		}
+	})
+
+	burgerMenu.addEventListener("click", () => {
+		// console.log("test")
+		// burgerMenu.toggleClass("open")
+		burgerMenu.classList.toggle("open")
+	})
+
 	mybutton = document.getElementById("scrollTop")
 	mybutton.addEventListener("click", () => {
 		document.body.scrollTop = 0 // For Safari
@@ -14,7 +45,7 @@ $.addEventListener("DOMContentLoaded", () => {
 	const form = $.querySelector("#contact-form")
 	const submitButton = $.querySelector("#submit-btn")
 
-	topFunction()
+	// topFunction()
 
 	// Fonction pour vider les champs du formulaire :
 	const cleanForm = () => {
