@@ -38,7 +38,6 @@ body {
   max-width: 1400px;
   margin: auto;
   padding: 0 20px;
-  overflow: hidden;
 }
 
 header {
@@ -221,8 +220,8 @@ footer .copyright {
   }
 }
 .intro__bandeau-texte__image {
-  width: 30px;
-  margin-top: -5px;
+  width: 28px;
+  padding-bottom: 5px;
 }
 @media (min-width: 992px) {
   .intro__bandeau-texte__image {
@@ -353,6 +352,7 @@ footer .copyright {
 }
 
 .menu-left {
+  overflow: hidden;
   background-color: #000;
   height: 100vh;
   width: 100vw;
@@ -400,7 +400,7 @@ footer .copyright {
   bottom: 20px;
 }
 .menu-left.slide-in .content .container-foot-mobile .block-prefooter {
-  margin-bottom: 6vh;
+  margin-bottom: 5vh;
 }
 .menu-left.slide-in .content .container-foot-mobile .block-prefooter .first-block .first-block__block-top {
   font-size: 15px;
@@ -614,7 +614,8 @@ footer .copyright {
 .block-prefooter .prefooter-arrowtop {
   transform: rotate(180deg);
   cursor: pointer;
-  width: 45px;
+  width: 35px;
+  margin-bottom: 5px;
 }
 @media (min-width: 992px) {
   .block-prefooter .prefooter-arrowtop {
