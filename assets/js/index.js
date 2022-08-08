@@ -1,17 +1,68 @@
 const $ = document
 
 $.addEventListener("DOMContentLoaded", () => {
-	// $(".burger2").click(function () {
-	// 	$(".burger2").toggleClass("open")
-	// })
-	burgerContainer = document.getElementById("burger-container")
-	burgerMenu = document.getElementById("burger")
-	menuLeft = document.getElementById("menu-left")
+	const yearSet = () => {
+		const year = document.getElementById("year")
+		const d = new Date().getFullYear()
+		year.innerHTML = d
+		// year.addEventListener("click", () => {
+		// 	console.log(d)
+		// })
+	}
+
+	yearSet()
+
+	const copyClipboard = () => {
+		const mailToCopy = document.getElementById("mailToCopy")
+		mailToCopy.addEventListener("click", () => {
+			const range = document.createRange()
+			range.selectNode(mailToCopy)
+			window.getSelection().removeAllRanges() // clear current selection
+			window.getSelection().addRange(range) // to select text
+			$.execCommand("copy")
+			window.getSelection().removeAllRanges() // to deselect
+			// console.log("test")
+		})
+	}
+	copyClipboard()
+
+	const copytootTip = () => {
+		const mailToCopy = document.getElementById("mailToCopy")
+		const tooltipText = document.getElementById("tooltiptext")
+		mailToCopy.addEventListener("click", () => {
+			tooltipText.innerHTML = "Copié !"
+		})
+	}
+	copytootTip()
+
+	const randomFonction = () => {
+		const months = ["deluxe-rose-&-bleue", "February-2", "March-3-2"]
+		const random = Math.floor(Math.random() * months.length)
+		const randomProject = document.getElementById("random-project")
+		const randomProjectLink = document.getElementById("random-project-link")
+
+		if (randomProject != null) {
+			randomProject.textContent = (random, months[random].replaceAll("-", " "))
+			randomProjectLink.setAttribute(
+				"href",
+				"./" + (random, months[random]) + ".html"
+			)
+		}
+	}
+	randomFonction()
+
+	// }
+
+	//////////////////////////
+	const burgerContainer = document.getElementById("burger-container")
+	const burgerMenu = document.getElementById("burger")
+	const menuLeft = document.getElementById("menu-left")
 
 	burgerContainer.addEventListener("click", () => {
 		// console.log("test")
 		menuOpen = document.getElementById("menu-open")
 		menuClose = document.getElementById("menu-close")
+
 		if (menuOpen.classList.contains("active")) {
 			// console.log("test2")
 			menuOpen.classList.remove("active")
@@ -31,12 +82,17 @@ $.addEventListener("DOMContentLoaded", () => {
 		// burgerMenu.toggleClass("open")
 		burgerMenu.classList.toggle("open")
 	})
-
-	mybutton = document.getElementById("scrollTop")
-	mybutton.addEventListener("click", () => {
-		document.body.scrollTop = 0 // For Safari
-		document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
-	})
+	//////////////////////////////////
+	const scrollTopFunction = () => {
+		const mybutton = document.getElementById("scrollTop")
+		mybutton.addEventListener("click", () => {
+			console.log("test")
+			window.scrollTo({ top: 0, behavior: "smooth" })
+			// document.body.scrollTop = 0 // For Safari
+			// document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
+		})
+	}
+	scrollTopFunction()
 	// const topFunction = () => {
 	// 	document.body.scrollTop = 0 // For Safari
 	// 	document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera

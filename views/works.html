@@ -9,21 +9,21 @@
 
 		<script src="../assets/js/index.js"></script>
 
-		<title>Marc Fontenelle - Works</title>
+		<title>Marc Fontenelle - Projets</title>
 	</head>
 	<body>
 		<div class="menu-left" id="menu-left">
 			<div class="container content">
 				<header>
 					<a href="../index.html" class="logo">
-						<img src="../assets/images/logo2.svg" alt="Logo Marc Fontenelle" />
+						<img src="../assets/images/logo.svg" alt="Logo Marc Fontenelle" />
 					</a>
 					<nav>
 						<ul>
-							<li><a href="#">à propos</a></li>
+							<li><a href="./about.html">à propos</a></li>
 							<li><a href="./works.htmm">Projets</a></li>
-							<li><a href="#">Contact</a></li>
-							<li><a href="#">Presse</a></li>
+							<li><a href="./contact.html">Contact</a></li>
+							<li><a href="./archives.html">Archives</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -32,15 +32,18 @@
 					<div class="block-prefooter">
 						<div class="first-block">
 							<div class="first-block__block-top">
-								<a href="#" class="first-block__block-top__first">
+								<div class="first-block__block-top__first">
 									Vous avez un projet ?<span>Parlons-en</span>
-								</a>
+								</div>
 								<!-- <div class="first-block__block-top__second">
 								Send me<span>A message</span>
 							</div> -->
 							</div>
-							<div class="first-block__block-mail">
-								marc.fontenelle-pro@gmail.com
+							<div class="first-block__block-mail" id="containerMailToCopy">
+								<span class="tooltiptext" id="tooltiptext"
+									>Copier l'email !</span
+								>
+								<div id="mailToCopy">marc.fontenelle-pro@gmail.com</div>
 							</div>
 						</div>
 						<!-- <img
@@ -53,12 +56,24 @@
 					<footer>
 						<nav>
 							<ul class="nav-gauche">
-								<li><a href="#">Instagram</a></li>
-								<li><a href="#">Linkedin</a></li>
+								<li>
+									<a
+										target="_blank"
+										href="https://www.instagram.com/marcfontenelle/"
+										>Instagram</a
+									>
+								</li>
+								<li>
+									<a
+										target="_blank"
+										href="https://fr.linkedin.com/in/marc-fontenelle-15b6475a"
+										>Linkedin</a
+									>
+								</li>
 							</ul>
 						</nav>
 						<p class="copyright">
-							©2022 – All rights reserved – MARC FONTENELLE
+							©<span id="year"></span> – All rights reserved – MARC FONTENELLE
 						</p>
 					</footer>
 				</div>
@@ -69,15 +84,15 @@
 			<div class="intro-container">
 				<header>
 					<a href="../index.html" class="logo">
-						<img src="../assets/images/logo2.svg" alt="Logo Marc Fontenelle" />
+						<img src="../assets/images/logo.svg" alt="Logo Marc Fontenelle" />
 					</a>
 
 					<nav>
 						<ul>
-							<li><a href="#">à propos</a></li>
+							<li><a href="./about.html">à propos</a></li>
 							<li><a href="./works.html">Projets</a></li>
-							<li><a href="#">Contact</a></li>
-							<li><a href="#">Presse</a></li>
+							<li><a href="./contact.html">Contact</a></li>
+							<li><a href="./archives.html">Archives</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -95,7 +110,7 @@
 				<div class="title-cat no-margin" id="works">Projets</div>
 				<div class="works">
 					<div class="works__left">
-						<a href="./projets/projet_deluxe.html"
+						<a href="./projets/deluxe-rose-&-bleue.html"
 							><img
 								src="../assets/images/previews/preview_deluxe-rose-&-bleue.jpg"
 								alt=""
@@ -169,18 +184,19 @@
 				</div>
 			</div>
 			<!-- /works-container -->
-			<div class="block-prefooter">
+			<div class="block-prefooter works">
 				<div class="first-block">
 					<div class="first-block__block-top">
-						<a href="#" class="first-block__block-top__first">
+						<div class="first-block__block-top__first">
 							Vous avez un projet ?<span>Parlons-en</span>
-						</a>
-						<a href="#" class="first-block__block-top__second">
+						</div>
+						<div class="first-block__block-top__second">
 							Envoyez-moi<span>Un message</span>
-						</a>
+						</div>
 					</div>
-					<div class="first-block__block-mail">
-						marc.fontenelle-pro@gmail.com
+					<div class="first-block__block-mail" id="containerMailToCopy">
+						<span class="tooltiptext" id="tooltiptext">Copier l'email !</span>
+						<div id="mailToCopy">marc.fontenelle-pro@gmail.com</div>
 					</div>
 				</div>
 				<img
@@ -194,17 +210,31 @@
 			<footer>
 				<nav>
 					<ul class="nav-gauche">
-						<li><a href="#">Instagram</a></li>
-						<li><a href="#">Linkedin</a></li>
+						<li>
+							<a
+								target="_blank"
+								href="https://www.instagram.com/marcfontenelle/"
+								>Instagram</a
+							>
+						</li>
+						<li>
+							<a
+								target="_blank"
+								href="https://fr.linkedin.com/in/marc-fontenelle-15b6475a"
+								>Linkedin</a
+							>
+						</li>
 					</ul>
 					<ul class="nav-droite">
-						<li><a href="#">à propos</a></li>
+						<li><a href="./about.html">à propos</a></li>
 						<li><a href="./works.html">Projets</a></li>
-						<li><a href="#">Contact</a></li>
-						<li><a href="#">Presse</a></li>
+						<li><a href="./contact.html">Contact</a></li>
+						<li><a href="./archives.html">Archives</a></li>
 					</ul>
 				</nav>
-				<p class="copyright">©2022 – All rights reserved – MARC FONTENELLE</p>
+				<p class="copyright">
+					©<span id="year"></span> – All rights reserved – MARC FONTENELLE
+				</p>
 			</footer>
 			<!-- /footer -->
 		</div>
