@@ -2,6 +2,7 @@
 .btn {
   border: 2px solid white;
   background: none;
+  font-family: "Inter", sans-serif;
   color: white;
   border-radius: 50px;
   font-size: 15px;
@@ -351,7 +352,7 @@ footer .copyright #yearDisplay {
 @media (min-width: 992px) {
   .work-single .bloc-pre-detail__bloc2 .desc-project {
     font-size: 16px;
-    line-height: 1.2em;
+    line-height: 1.6em;
   }
 }
 .work-single .bloc-pre-detail__bloc2 .desc-project a {
@@ -421,12 +422,17 @@ footer .copyright #yearDisplay {
   font-weight: 600;
   margin: 7vh 0 0 0;
   color: #fcf8e8;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
 }
 @media (min-width: 992px) {
   .work-single .bloc-pre-detail .title-project {
     font-size: 50px;
-    line-height: 0.9em;
+    line-height: 1.2em;
+  }
+}
+@media (min-width: 992px) {
+  .work-single .bloc-pre-detail .title-project.mb {
+    margin: 7vh 0 15px 0;
   }
 }
 .work-single .img-project {
@@ -440,8 +446,13 @@ footer .copyright #yearDisplay {
 }
 @media (min-width: 992px) {
   .work-single .img-project img {
-    height: 570px;
+    height: 700px;
     width: 63%;
+  }
+}
+@media (min-width: 992px) {
+  .work-single .img-project img.img-contain {
+    object-fit: contain;
   }
 }
 
@@ -555,8 +566,24 @@ footer .copyright #yearDisplay {
   .imagesProjectContainer__right {
     display: flex;
     justify-content: end;
-    margin-top: -50vh;
+    margin-top: -30vh;
     width: 50%;
+  }
+}
+.imagesProjectContainer__right.first {
+  margin-top: 5vh;
+}
+@media (min-width: 992px) {
+  .imagesProjectContainer__right.first {
+    margin-top: -40vh;
+  }
+}
+.imagesProjectContainer__right.second {
+  margin-top: 5vh;
+}
+@media (min-width: 992px) {
+  .imagesProjectContainer__right.second {
+    margin-top: -45vh;
   }
 }
 @media (min-width: 992px) {
@@ -713,6 +740,7 @@ footer .copyright #yearDisplay {
 }
 .works__title {
   margin: 30px 0 10px 0;
+  line-height: 1.2em;
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1231,6 +1259,7 @@ header nav ul li a:before {
 .block-content_about.contact {
   margin-top: 0;
   margin-bottom: 2vh;
+  justify-content: start;
 }
 @media (min-width: 992px) {
   .block-content_about .desc-about {

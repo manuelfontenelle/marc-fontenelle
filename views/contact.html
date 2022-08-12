@@ -14,6 +14,7 @@
 		<link rel="stylesheet" href="../assets/css/style.css" />
 
 		<script src="../assets/js/index.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 		<title>Marc Fontenelle - Contact</title>
 	</head>
@@ -107,21 +108,16 @@
 			<div class="works-container work-single">
 				<div class="title-cat no-margin contact">Contact</div>
 
-				<div class="block-content_about contact">
-					orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Leo vel orci porta
-					non pulvinar neque laoreet suspendisse interdum.
-				</div>
+				<!-- <div class="block-content_about contact">
+					Vous pouvez me contacter via ce formulaire ou directement par e-mail
+				</div> -->
 
 				<form id="contact-form">
 					<div class="message-block">
 						<label class="message-block__label" for="message"
-							>Envoyez nous un email</label
+							>Envoyez moi un message</label
 						>
-						<textarea
-							placeholder="Votre message ici..."
-							id="message"
-						></textarea>
+						<textarea placeholder="Votre message..." id="message"></textarea>
 					</div>
 
 					<div class="email-block">
@@ -132,14 +128,8 @@
 							id="email"
 						/>
 					</div>
-
-					<!-- subject -->
-					<!-- <input type="text" placeholder="Sujet" id="subject" /> -->
-
-					<!-- message -->
-
 					<!-- submit button -->
-					<button id="submit-btn " class="btn contact">
+					<button id="submit-btn" class="btn contact">
 						Envoyer le message
 					</button>
 				</form>
