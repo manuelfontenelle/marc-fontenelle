@@ -7,7 +7,7 @@ $.addEventListener("DOMContentLoaded", () => {
 			"lausanne-jardin",
 			"le-flipot",
 			"le-jardinier",
-			"fontaine-mairie-mauregard",
+			"fontaine-mairie-de-mauregard",
 			"skolem",
 			"bouche-oreille",
 			"disque-double",
