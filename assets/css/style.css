@@ -415,7 +415,7 @@ footer .copyright #yearDisplay {
   }
 }
 .work-single .bloc-pre-detail .title-project {
-  font-size: 35px;
+  font-size: 40px;
   line-height: 1em;
   text-transform: uppercase;
   text-align: left;
@@ -442,7 +442,6 @@ footer .copyright #yearDisplay {
   width: 100%;
   height: 500px;
   object-fit: cover;
-  background-color: #1d1d1d;
 }
 @media (min-width: 992px) {
   .work-single .img-project img {
@@ -453,6 +452,7 @@ footer .copyright #yearDisplay {
 @media (min-width: 992px) {
   .work-single .img-project img.img-contain {
     object-fit: contain;
+    object-position: left top;
   }
 }
 
@@ -500,6 +500,7 @@ footer .copyright #yearDisplay {
 }
 .imagesProjectContainer__left {
   width: 100%;
+  margin-bottom: 5vh;
 }
 @media (min-width: 992px) {
   .imagesProjectContainer__left {
@@ -560,6 +561,7 @@ footer .copyright #yearDisplay {
 }
 .imagesProjectContainer__right {
   margin-top: 5vh;
+  margin-bottom: 5vh;
   width: 100%;
 }
 @media (min-width: 992px) {
@@ -659,8 +661,9 @@ footer .copyright #yearDisplay {
 }
 .random-work .left-txt {
   padding-top: 10vh;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 600;
+  width: 70%;
 }
 @media (min-width: 992px) {
   .random-work .left-txt {
