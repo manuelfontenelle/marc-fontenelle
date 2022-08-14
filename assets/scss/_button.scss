@@ -1,0 +1,33 @@
+.btn {
+	border: 2px solid white;
+	background: none;
+	// width: 150px;
+	font-family: "Inter", sans-serif;
+	color: white;
+	border-radius: 50px;
+	font-size: 15px;
+	padding: 22px 37px;
+	text-transform: uppercase;
+	margin: 0 auto;
+	font-weight: 600;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 2px;
+	cursor: pointer;
+
+	&.contact {
+		width: 100%;
+		margin: 10px 0 0 0;
+		@media (min-width: $breakpoint-small) {
+			width: 290px;
+		}
+	}
+
+	&.mb {
+		margin-bottom: 15vh;
+	}
+	&:hover {
+		background: #1c1c1c;
+	}
+}

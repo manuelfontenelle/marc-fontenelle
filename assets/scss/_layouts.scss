@@ -1,0 +1,18 @@
+body {
+	background-color: #2a2a2a;
+	font-family: "Inter", sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	@media (min-width: $breakpoint-small) {
+		font-size: 70px;
+	}
+	a {
+		text-decoration: none;
+		color: $text-color;
+	}
+}
+.container {
+	max-width: $layout-width;
+	margin: auto;
+	padding: 0 20px;
+}

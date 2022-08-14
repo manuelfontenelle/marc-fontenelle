@@ -1,0 +1,87 @@
+.block-prefooter {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: $text-color;
+	align-items: end;
+	margin-bottom: 10vh;
+
+	&.works {
+		margin-top: 15vh;
+		// @media (min-width: $breakpoint-large) {
+		// 	margin-top: 15vh;
+		// }
+	}
+
+	a {
+		text-decoration: none;
+		color: $text-color;
+	}
+	.first-block {
+		// border: 1px solid red;
+		// width: 55%;
+
+		&__block-top {
+			justify-content: space-between;
+			display: flex;
+
+			// width: 35%;
+			font-size: 17px;
+
+			line-height: 1.3em;
+			font-weight: 500;
+			text-transform: uppercase;
+
+			@media (min-width: $breakpoint-large) {
+				font-size: 22px;
+			}
+
+			&__first {
+				span {
+					display: block;
+				}
+			}
+			&__second {
+				display: none;
+				@media (min-width: $breakpoint-large) {
+					display: block;
+				}
+				span {
+					display: block;
+				}
+			}
+		}
+		&__block-mail {
+			padding-top: 50px;
+			font-weight: 600;
+			font-size: 22px;
+			line-height: 1.2em;
+			text-transform: uppercase;
+			text-align: left;
+			letter-spacing: 1px;
+			cursor: pointer;
+			position: relative;
+
+			&:hover {
+				.tooltiptext {
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+
+			@media (min-width: $breakpoint-large) {
+				line-height: 0.9em;
+				font-size: 38px;
+			}
+		}
+	}
+	.prefooter-arrowtop {
+		transform: rotate(180deg);
+		cursor: pointer;
+		width: 35px;
+		margin-bottom: 5px;
+		@media (min-width: $breakpoint-large) {
+			width: 57px;
+		}
+	}
+}

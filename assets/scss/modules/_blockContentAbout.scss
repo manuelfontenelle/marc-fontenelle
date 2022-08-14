@@ -1,0 +1,26 @@
+.block-content_about {
+	margin-top: 10vh;
+	color: $text-color;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1.7em;
+	width: 100%;
+	// text-align: justify;
+	display: flex;
+	justify-content: end;
+	@media (min-width: $breakpoint-large) {
+		font-size: 18px;
+	}
+
+	&.contact {
+		margin-top: 0;
+		margin-bottom: 2vh;
+		justify-content: start;
+	}
+	.desc-about {
+		@media (min-width: $breakpoint-large) {
+			width: 70%;
+			margin-bottom: 50px;
+		}
+	}
+}
