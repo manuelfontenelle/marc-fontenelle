@@ -1,104 +1,118 @@
 .intro-container {
-	display: flex;
-	flex-direction: column;
-	position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .intro {
-	position: relative;
+  position: relative;
 
-	&__bio {
-		height: 70vh;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		@media (min-width: $breakpoint-large) {
-			// height: 75vh;
-		}
-		&__title {
-			font-size: 50px;
-			line-height: 1em;
-			text-transform: uppercase;
-			text-align: left;
-			font-weight: 600;
-			margin-bottom: 30px;
-			color: $text-color;
-			& span {
-				display: block;
-			}
+  &__bio {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (min-width: $breakpoint-large) {
+      // height: 75vh;
+    }
+    &__title {
+      font-size: 50px;
+      line-height: 1em;
+      text-transform: uppercase;
+      text-align: left;
+      font-weight: 600;
+      margin-bottom: 30px;
+      color: $text-color;
+      & span {
+        display: block;
+      }
 
-			@media (min-width: $breakpoint-large) {
-				font-size: 75px;
-			}
-		}
-		&__photo {
-			width: 50vw;
-			object-fit: cover;
-			@media (min-width: $breakpoint-large) {
-				width: 15vw;
-			}
-		}
-	}
+      @media (min-width: $breakpoint-large) {
+        font-size: 65px;
+      }
 
-	&__bandeau-texte {
-		display: flex;
-		justify-content: space-between;
-		align-items: end;
-		// position: absolute;
-		width: 100%;
-		// bottom: 100px;
-		height: 11vh;
-		color: $text-color;
-		flex-direction: row-reverse;
+      @media (min-width: $breakpoint-custom) {
+        font-size: 70px;
+      }
+    }
+    &__photo {
+      width: 50vw;
+      object-fit: cover;
+      @media (min-width: $breakpoint-large) {
+        width: 15vw;
+      }
+    }
+  }
 
-		@media (min-width: $breakpoint-large) {
-			height: 16vh;
-			flex-direction: row;
-		}
+  &__bandeau-texte {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    // position: absolute;
+    width: 100%;
+    // bottom: 100px;
+    height: 11vh;
+    color: $text-color;
+    flex-direction: row-reverse;
 
-		&__image {
-			width: 28px;
-			padding-bottom: 5px;
-			@media (min-width: $breakpoint-large) {
-				width: 60px;
-			}
-		}
-		&__bloc-texte {
-			display: none;
-			color: $text-color;
-			width: 35%;
-			font-size: 15px;
-			line-height: 1.5em;
-			font-weight: 500;
-			text-transform: uppercase;
-			span {
-				display: block;
-				font-weight: 300;
-				font-size: 13px;
-				margin-top: 7px;
-				// text-align: right;
-			}
-			@media (min-width: $breakpoint-large) {
-				// font-size: 15px;
-				display: block;
-			}
-		}
-		&__bloc-titre {
-			font-weight: 600;
-			width: 50%;
-			font-size: 45px;
-			text-transform: uppercase;
-			text-align: left;
-			line-height: 1em;
-			span {
-				display: block;
-			}
-			@media (min-width: $breakpoint-large) {
-				text-align: right;
-				font-size: 75px;
-				// line-height: 0.9em;
-				// font-size: 48px;
-			}
-		}
-	}
+    @media (min-width: $breakpoint-large) {
+      height: 16vh;
+      flex-direction: row;
+    }
+
+    &__image {
+      width: 28px;
+      padding-bottom: 5px;
+      @media (min-width: $breakpoint-large) {
+        width: 60px;
+      }
+    }
+    &__bloc-texte {
+      display: none;
+      color: $text-color;
+      width: 35%;
+      font-size: 15px;
+      line-height: 1.5em;
+      font-weight: 500;
+      text-transform: uppercase;
+      span {
+        display: block;
+        font-weight: 300;
+        font-size: 13px;
+        margin-top: 7px;
+        @media (min-width: $breakpoint-large) {
+          font-size: 11px;
+        }
+        @media (min-width: $breakpoint-custom) {
+          font-size: 13px;
+        }
+      }
+      @media (min-width: $breakpoint-large) {
+        font-size: 13px;
+        display: block;
+      }
+      @media (min-width: $breakpoint-custom) {
+        font-size: 14px;
+        margin-top: 75px;
+      }
+    }
+    &__bloc-titre {
+      font-weight: 600;
+      width: 50%;
+      font-size: 45px;
+      text-transform: uppercase;
+      text-align: left;
+      line-height: 1em;
+      span {
+        display: block;
+      }
+      @media (min-width: $breakpoint-large) {
+        text-align: right;
+        font-size: 70px;
+      }
+      //   @media (min-width: $breakpoint-custom) {
+      //     margin-top: 75px;
+      //   }
+    }
+  }
 }
