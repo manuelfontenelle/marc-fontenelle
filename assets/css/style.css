@@ -143,11 +143,13 @@ body a {
 }
 @media (min-width: 992px) {
   .intro__bandeau-texte__bloc-texte span {
+    margin-top: 3px;
     font-size: 11px;
   }
 }
 @media (min-width: 1400px) {
   .intro__bandeau-texte__bloc-texte span {
+    margin-top: 7px;
     font-size: 13px;
   }
 }
