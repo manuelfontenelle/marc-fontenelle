@@ -1,18 +1,18 @@
 table {
-	margin: 1rem auto;
-	text-align: center;
-	width: 100%;
-	max-width: 100%;
-	// border-collapse: collapse;
-	// border: 1px solid;
-	font-size: 16px;
-	color: $text-color;
-	.arrow {
-		transform: rotate(-140deg);
-		// cursor: pointer;
-		width: 12px;
-		// margin-bottom: 5px;
-	}
+  margin: 1rem auto;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  // border-collapse: collapse;
+  // border: 1px solid;
+  font-size: 14px;
+  color: $text-color;
+  .arrow {
+    transform: rotate(-140deg);
+    // cursor: pointer;
+    width: 12px;
+    // margin-bottom: 5px;
+  }
 }
 
 // thead {
@@ -22,16 +22,16 @@ table {
 
 th,
 td {
-	padding: 25px 0;
-	line-height: 1.2em;
+  padding: 25px 0;
+  line-height: 1.2em;
 }
 
 tr {
-	border-bottom: 2px solid $text-color;
-	padding: 10px 0;
-	&.no-border {
-		border: none;
-	}
+  border-bottom: 2px solid $text-color;
+  padding: 10px 0;
+  &.no-border {
+    border: none;
+  }
 }
 // tbody tr:nth-child(even) {
 // 	background-color: #ddd;
@@ -42,53 +42,53 @@ tr {
 
 th,
 td {
-	@media (min-width: $breakpoint-medium) {
-		padding: 12px 0;
-	}
+  @media (min-width: $breakpoint-medium) {
+    padding: 12px 0;
+  }
 }
 
 @media only screen and (max-width: $breakpoint-medium) {
-	table {
-		font-size: 15px;
-	}
+  table {
+    font-size: 15px;
+  }
 
-	table,
-	thead,
-	tbody,
-	th,
-	td,
-	tr {
-		display: block;
-	}
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
 
-	thead tr {
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-		padding: 10px 0;
-	}
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    padding: 10px 0;
+  }
 
-	th,
-	td {
-		padding: 8px 0;
-		line-height: 1.2em;
-	}
-	td {
-		position: relative;
-		padding-left: 50%;
-		white-space: normal;
-		text-align: left;
-	}
+  th,
+  td {
+    padding: 8px 0;
+    line-height: 1.2em;
+  }
+  td {
+    position: relative;
+    padding-left: 50%;
+    white-space: normal;
+    text-align: left;
+  }
 
-	td:before {
-		position: absolute;
-		top: 6px;
-		left: 6px;
-		width: 45%;
-		padding-right: 10px;
-		font-weight: bold;
-		white-space: nowrap;
-		text-align: left;
-		content: attr(data-title);
-	}
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: left;
+    content: attr(data-title);
+  }
 }
