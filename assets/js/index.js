@@ -19,7 +19,7 @@ $.addEventListener("DOMContentLoaded", () => {
 			"pet-&-troll",
 			"sculpture-faïence",
 			"sculpture-porcelaine",
-			"jardiniere",
+			"jardinière",
 			"pense-bête",
 			"cod",
 			"étagère",

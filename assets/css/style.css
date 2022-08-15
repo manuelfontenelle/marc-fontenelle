@@ -707,10 +707,11 @@ footer .copyright #yearDisplay {
   font-size: 40px;
   font-weight: 600;
   width: 70%;
+  line-height: 1.1em;
 }
 @media (min-width: 992px) {
   .random-work .left-txt {
-    font-size: 80px;
+    font-size: 70px;
   }
 }
 .random-work .right-txt {
@@ -785,20 +786,28 @@ footer .copyright #yearDisplay {
   }
 }
 .works__title {
-  margin: 30px 0 10px 0;
+  margin: 15px 0 8px 0;
   line-height: 1.2em;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   text-transform: uppercase;
+  width: 90%;
 }
 @media (min-width: 992px) {
   .works__title {
-    margin: 15px 0 10px 0;
+    font-size: 30px;
+    margin: 10px 0 8px 0;
+    width: 100%;
   }
 }
 .works__desc {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 16px;
+}
+@media (min-width: 992px) {
+  .works__desc {
+    font-size: 18px;
+  }
 }
 @media (min-width: 992px) {
   .works.mt {
@@ -808,7 +817,7 @@ footer .copyright #yearDisplay {
 .works__left {
   width: 100%;
   color: white;
-  margin-bottom: 115px;
+  margin-bottom: 10vh;
 }
 @media (min-width: 992px) {
   .works__left {
