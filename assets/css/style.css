@@ -64,18 +64,18 @@ body a {
   position: relative;
 }
 .intro__bio {
-  height: 70vh;
+  height: 68vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .intro__bio__title {
-  font-size: 50px;
+  font-size: 40px;
   line-height: 1em;
   text-transform: uppercase;
   text-align: left;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #fcf8e8;
 }
 .intro__bio__title span {
@@ -84,13 +84,13 @@ body a {
 @media (min-width: 992px) {
   .intro__bio__title {
     margin-bottom: 15px;
-    font-size: 65px;
+    font-size: 58px;
   }
 }
 @media (min-width: 1400px) {
   .intro__bio__title {
-    margin-bottom: 30px;
-    font-size: 70px;
+    margin-bottom: 25px;
+    font-size: 65px;
   }
 }
 .intro__bio__photo {
@@ -149,13 +149,13 @@ body a {
 }
 @media (min-width: 1400px) {
   .intro__bandeau-texte__bloc-texte span {
-    margin-top: 7px;
+    margin-top: 4px;
     font-size: 13px;
   }
 }
 @media (min-width: 992px) {
   .intro__bandeau-texte__bloc-texte {
-    font-size: 13px;
+    font-size: 14px;
     display: block;
   }
 }
@@ -760,7 +760,7 @@ footer .copyright #yearDisplay {
   font-weight: 600;
   margin: 14vh 0 7vh 0;
   color: #fcf8e8;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 @media (min-width: 992px) {
   .title-cat {
@@ -795,9 +795,14 @@ footer .copyright #yearDisplay {
 }
 @media (min-width: 992px) {
   .works__title {
-    font-size: 30px;
+    font-size: 28px;
     margin: 10px 0 8px 0;
     width: 100%;
+  }
+}
+@media (min-width: 1400px) {
+  .works__title {
+    font-size: 30px;
   }
 }
 .works__desc {
@@ -805,6 +810,11 @@ footer .copyright #yearDisplay {
   font-size: 16px;
 }
 @media (min-width: 992px) {
+  .works__desc {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1400px) {
   .works__desc {
     font-size: 18px;
   }
@@ -855,7 +865,7 @@ footer .copyright #yearDisplay {
   width: 100%;
   color: white;
   text-align: left;
-  margin-bottom: 115px;
+  margin-bottom: 10vh;
 }
 @media (min-width: 992px) {
   .works__right {
@@ -1237,13 +1247,14 @@ textarea::placeholder {
 }
 
 header {
-  height: 10vh;
+  height: 11vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 @media (min-width: 992px) {
   header {
+    height: 10vh;
     margin-top: 1vh;
   }
 }
@@ -1285,7 +1296,7 @@ header nav ul li a {
   text-transform: uppercase;
   color: #fcf8e8;
   text-decoration: none;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   opacity: 0.75;
   position: relative;
   padding: 20px 0px;
@@ -1310,13 +1321,19 @@ header nav ul li a:before {
   margin-top: 10vh;
   color: #fcf8e8;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 1.7em;
+  font-size: 15px;
+  line-height: 1.5em;
   width: 100%;
   display: flex;
   justify-content: end;
 }
 @media (min-width: 992px) {
+  .block-content_about {
+    font-size: 16px;
+    line-height: 1.7em;
+  }
+}
+@media (min-width: 1400px) {
   .block-content_about {
     font-size: 18px;
   }

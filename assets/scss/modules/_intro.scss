@@ -8,7 +8,7 @@
 	position: relative;
 
 	&__bio {
-		height: 70vh;
+		height: 68vh;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -16,12 +16,12 @@
 			// height: 75vh;
 		}
 		&__title {
-			font-size: 50px;
+			font-size: 40px;
 			line-height: 1em;
 			text-transform: uppercase;
 			text-align: left;
 			font-weight: 600;
-			margin-bottom: 30px;
+			margin-bottom: 20px;
 			color: $text-color;
 			& span {
 				display: block;
@@ -29,12 +29,12 @@
 
 			@media (min-width: $breakpoint-large) {
 				margin-bottom: 15px;
-				font-size: 65px;
+				font-size: 58px;
 			}
 
 			@media (min-width: $breakpoint-custom) {
-				margin-bottom: 30px;
-				font-size: 70px;
+				margin-bottom: 25px;
+				font-size: 65px;
 			}
 		}
 		&__photo {
@@ -87,12 +87,12 @@
 					font-size: 11px;
 				}
 				@media (min-width: $breakpoint-custom) {
-					margin-top: 7px;
+					margin-top: 4px;
 					font-size: 13px;
 				}
 			}
 			@media (min-width: $breakpoint-large) {
-				font-size: 13px;
+				font-size: 14px;
 				display: block;
 			}
 			@media (min-width: $breakpoint-custom) {

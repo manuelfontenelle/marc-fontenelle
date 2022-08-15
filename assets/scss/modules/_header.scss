@@ -1,63 +1,64 @@
 header {
-  height: 10vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  @media (min-width: $breakpoint-large) {
-    margin-top: 1vh;
-  }
-  @media (min-width: $breakpoint-custom) {
-    margin-top: inherit;
-  }
+	height: 11vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@media (min-width: $breakpoint-large) {
+		height: 10vh;
+		margin-top: 1vh;
+	}
+	@media (min-width: $breakpoint-custom) {
+		margin-top: inherit;
+	}
 
-  .logo {
-    width: 100px;
-    margin-top: 30px;
-    @media (min-width: $breakpoint-large) {
-      margin-top: 0;
-    }
-  }
+	.logo {
+		width: 100px;
+		margin-top: 30px;
+		@media (min-width: $breakpoint-large) {
+			margin-top: 0;
+		}
+	}
 
-  nav {
-    display: none;
-    width: 500px;
-    @media (min-width: $breakpoint-large) {
-      display: block;
-    }
-    ul {
-      display: flex;
-      justify-content: space-between;
-      li {
-        display: flex;
-        align-items: center;
-        a {
-          font-weight: 600;
-          font-size: 16px;
-          display: block;
-          text-transform: uppercase;
-          color: $text-color;
-          text-decoration: none;
-          letter-spacing: 4px;
-          opacity: 0.75;
-          position: relative;
-          padding: 20px 0px;
-          &:hover {
-            opacity: 1;
-            &:before {
-              width: 97%;
-            }
-          }
-          &:before {
-            transition: 600ms;
-            height: 3px;
-            content: "";
-            position: absolute;
-            background-color: $text-color;
-            width: 0%;
-            bottom: 10px;
-          }
-        }
-      }
-    }
-  }
+	nav {
+		display: none;
+		width: 500px;
+		@media (min-width: $breakpoint-large) {
+			display: block;
+		}
+		ul {
+			display: flex;
+			justify-content: space-between;
+			li {
+				display: flex;
+				align-items: center;
+				a {
+					font-weight: 600;
+					font-size: 16px;
+					display: block;
+					text-transform: uppercase;
+					color: $text-color;
+					text-decoration: none;
+					letter-spacing: 3px;
+					opacity: 0.75;
+					position: relative;
+					padding: 20px 0px;
+					&:hover {
+						opacity: 1;
+						&:before {
+							width: 97%;
+						}
+					}
+					&:before {
+						transition: 600ms;
+						height: 3px;
+						content: "";
+						position: absolute;
+						background-color: $text-color;
+						width: 0%;
+						bottom: 10px;
+					}
+				}
+			}
+		}
+	}
 }
