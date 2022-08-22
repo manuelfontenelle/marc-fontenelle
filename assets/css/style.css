@@ -1054,13 +1054,15 @@ td {
 .block-prefooter .first-block__block-mail {
   padding-top: 50px;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 20px;
+  margin-right: 20px;
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: left;
   letter-spacing: 1px;
   cursor: pointer;
   position: relative;
+  word-break: break-word;
 }
 .block-prefooter .first-block__block-mail:hover .tooltiptext {
   visibility: visible;
@@ -1068,6 +1070,7 @@ td {
 }
 @media (min-width: 992px) {
   .block-prefooter .first-block__block-mail {
+    margin-right: inherit;
     line-height: 0.9em;
     font-size: 38px;
   }
