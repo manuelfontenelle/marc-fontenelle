@@ -442,7 +442,7 @@ footer .copyright #yearDisplay {
   }
 }
 .work-single .bloc-pre-detail .title-project {
-  font-size: 40px;
+  font-size: 37px;
   line-height: 1em;
   text-transform: uppercase;
   text-align: left;
@@ -706,11 +706,11 @@ footer .copyright #yearDisplay {
   padding-top: 10vh;
   font-size: 40px;
   font-weight: 600;
-  width: 70%;
   line-height: 1.1em;
 }
 @media (min-width: 992px) {
   .random-work .left-txt {
+    width: 70%;
     font-size: 70px;
   }
 }
