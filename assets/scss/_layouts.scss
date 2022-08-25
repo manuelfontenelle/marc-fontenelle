@@ -16,11 +16,11 @@ body {
   margin: auto;
   padding: 0 20px;
 
-  @media (min-width: $breakpoint-small) {
+  @media (min-width: $breakpoint-medium) {
     padding: 0 65px;
   }
 
-  @media (min-width: $breakpoint-desktop) {
+  @media (min-width: $breakpoint-custom) {
     padding: 0 20px;
   }
 }
