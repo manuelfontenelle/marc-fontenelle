@@ -58,6 +58,7 @@ $.addEventListener("DOMContentLoaded", () => {
 		const year2 = document.getElementById("yearDisplay2")
 		const d = new Date().getFullYear()
 		year.innerHTML = d
+		year2.innerHTML = d
 	}
 	yearSet()
 
