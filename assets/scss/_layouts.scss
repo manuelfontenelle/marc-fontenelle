@@ -11,6 +11,10 @@ body {
 		color: $text-color;
 	}
 }
+
+body.slide-in {
+	overflow: hidden;
+}
 .container {
 	max-width: $layout-width;
 	margin: auto;

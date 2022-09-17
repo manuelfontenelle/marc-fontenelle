@@ -55,6 +55,7 @@ $.addEventListener("DOMContentLoaded", () => {
 
 	const yearSet = () => {
 		const year = document.getElementById("yearDisplay")
+		const year2 = document.getElementById("yearDisplay2")
 		const d = new Date().getFullYear()
 		year.innerHTML = d
 	}
@@ -87,6 +88,7 @@ $.addEventListener("DOMContentLoaded", () => {
 		const burgerContainer = document.getElementById("burger-container")
 		const burgerMenu = document.getElementById("burger")
 		const menuLeft = document.getElementById("menu-left")
+		const body = document.body
 
 		burgerContainer.addEventListener("click", () => {
 			// console.log("test")
@@ -99,11 +101,13 @@ $.addEventListener("DOMContentLoaded", () => {
 				menuClose.classList.add("active")
 				burgerMenu.classList.add("open")
 				menuLeft.classList.add("slide-in")
+				body.classList.add("slide-in")
 			} else {
 				menuOpen.classList.add("active")
 				menuClose.classList.remove("active")
 				burgerMenu.classList.remove("open")
 				menuLeft.classList.remove("slide-in")
+				body.classList.remove("slide-in")
 			}
 		})
 

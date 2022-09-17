@@ -48,6 +48,10 @@ body a {
   color: #fcf8e8;
 }
 
+body.slide-in {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1400px;
   margin: auto;
