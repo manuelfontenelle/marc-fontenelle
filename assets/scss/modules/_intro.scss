@@ -38,10 +38,20 @@
 			}
 		}
 		&__photo {
-			width: 50vw;
+			width: 89vw;
+			height: 35vh;
+
 			object-fit: cover;
+
+			@media (min-width: $breakpoint-medium) {
+				width: 60vw;
+				height: 30vh;
+			}
 			@media (min-width: $breakpoint-large) {
-				width: 15vw;
+				width: 50vw;
+			}
+			@media (min-width: $breakpoint-desktop) {
+				width: 33vw;
 			}
 		}
 	}

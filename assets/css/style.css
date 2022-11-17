@@ -108,12 +108,24 @@ body.slide-in {
   }
 }
 .intro__bio__photo {
-  width: 50vw;
+  width: 89vw;
+  height: 35vh;
   object-fit: cover;
+}
+@media (min-width: 768px) {
+  .intro__bio__photo {
+    width: 60vw;
+    height: 30vh;
+  }
 }
 @media (min-width: 992px) {
   .intro__bio__photo {
-    width: 15vw;
+    width: 50vw;
+  }
+}
+@media (min-width: 1200px) {
+  .intro__bio__photo {
+    width: 33vw;
   }
 }
 .intro__bandeau-texte {
