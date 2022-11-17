@@ -125,8 +125,8 @@ body.slide-in {
 }
 @media (min-width: 1200px) {
   .intro__bio__photo {
-    height: 32vh;
-    width: 40vw;
+    height: 33vh;
+    width: 32vw;
   }
 }
 .intro__bandeau-texte {
