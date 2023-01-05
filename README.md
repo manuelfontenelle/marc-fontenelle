@@ -10,4 +10,6 @@ Dans package.json ajouter :
 "sass": "sass --watch ./assets/sass/scss/:./assets/sass/css"
 
 lancer commande :
-npm run sass
+
+- npm run sass
+- Activer live reload Vscode (Go live)
