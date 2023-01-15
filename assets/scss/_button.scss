@@ -16,6 +16,11 @@
 	letter-spacing: 2px;
 	cursor: pointer;
 
+	&.disabled-btn {
+		cursor: wait;
+		opacity: 0.5;
+	}
+
 	&.contact {
 		width: 100%;
 		margin: 10px 0 0 0;

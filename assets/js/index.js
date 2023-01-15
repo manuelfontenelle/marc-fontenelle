@@ -159,10 +159,7 @@ $.addEventListener("DOMContentLoaded", () => {
 			}
 
 			try {
-				// const response = await axios.post(
-				// 	"http://localhost:3000/form",
-				// 	data,
-				// )
+				// const response = await axios.post("http://localhost:3000/form", data)
 				const response = await axios.post(
 					"https://nodemailer-backend-mf.herokuapp.com/form",
 					data
