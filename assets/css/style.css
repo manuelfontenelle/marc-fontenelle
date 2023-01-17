@@ -888,7 +888,7 @@ footer .copyright #yearDisplay {
   height: 100%;
   background-color: white;
   object-fit: cover;
-  transition: transform 300ms;
+  transition: transform 300ms ease-in-out;
 }
 @media (min-width: 992px) {
   .works__left .wrapper:hover img {
@@ -935,7 +935,7 @@ footer .copyright #yearDisplay {
   height: 100%;
   object-fit: cover;
   background-color: white;
-  transition: transform 300ms;
+  transition: transform 300ms ease-in-out;
 }
 .decal .works__right .wrapper img {
   height: 500px;
