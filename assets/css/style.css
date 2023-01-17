@@ -890,8 +890,10 @@ footer .copyright #yearDisplay {
   object-fit: cover;
   transition: transform 300ms;
 }
-.works__left .wrapper:hover img {
-  transform: scale(1.2);
+@media (min-width: 992px) {
+  .works__left .wrapper:hover img {
+    transform: scale(1.2);
+  }
 }
 .works__right {
   width: 100%;
@@ -943,8 +945,10 @@ footer .copyright #yearDisplay {
     height: 500px;
   }
 }
-.works__right .wrapper:hover img {
-  transform: scale(1.2);
+@media (min-width: 992px) {
+  .works__right .wrapper:hover img {
+    transform: scale(1.2);
+  }
 }
 
 .tooltiptext {
