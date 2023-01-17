@@ -872,25 +872,26 @@ footer .copyright #yearDisplay {
     width: 32%;
   }
 }
-.works__left img {
+.works__left .wrapper {
   width: 100%;
   height: 500px;
-  background-color: white;
-  object-fit: cover;
+  overflow: hidden;
 }
 @media (min-width: 992px) {
-  .works__left img {
+  .works__left .wrapper {
     object-fit: cover;
     height: 470px;
   }
 }
-.decal .works__left img {
-  height: 500px;
+.works__left .wrapper img {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  object-fit: cover;
+  transition: transform 300ms;
 }
-@media (min-width: 992px) {
-  .decal .works__left img {
-    height: 450px;
-  }
+.works__left .wrapper:hover img {
+  transform: scale(1.2);
 }
 .works__right {
   width: 100%;
@@ -913,25 +914,37 @@ footer .copyright #yearDisplay {
     width: 66%;
   }
 }
-.works__right img {
+.works__right .wrapper {
   width: 100%;
   height: 500px;
-  object-fit: cover;
-  background-color: white;
+  overflow: hidden;
 }
 @media (min-width: 992px) {
-  .works__right img {
-    height: 690px;
+  .works__right .wrapper {
     object-fit: cover;
+    height: 470px;
+  }
+  .works__right .wrapper.special {
+    height: 650px;
   }
 }
-.decal .works__right img {
+.works__right .wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: white;
+  transition: transform 300ms;
+}
+.decal .works__right .wrapper img {
   height: 500px;
 }
 @media (min-width: 992px) {
-  .decal .works__right img {
-    height: 470px;
+  .decal .works__right .wrapper img {
+    height: 500px;
   }
+}
+.works__right .wrapper:hover img {
+  transform: scale(1.2);
 }
 
 .tooltiptext {

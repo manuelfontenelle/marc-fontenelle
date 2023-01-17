@@ -82,22 +82,25 @@
 				width: 32%;
 			}
 		}
-
-		img {
+		.wrapper {
 			width: 100%;
 			height: 500px;
-			background-color: white;
-			object-fit: cover;
-			// object-fit: contain;
+			overflow: hidden;
 			@media (min-width: $breakpoint-large) {
 				object-fit: cover;
 				height: 470px;
 			}
-			.decal & {
-				height: 500px;
-				@media (min-width: $breakpoint-large) {
-					height: 450px;
-				}
+
+			img {
+				width: 100%;
+				height: 100%;
+				background-color: white;
+				object-fit: cover;
+				transition: transform 300ms;
+			}
+
+			&:hover img {
+				transform: scale(1.2);
 			}
 		}
 	}
@@ -119,21 +122,34 @@
 				width: 66%;
 			}
 		}
-		img {
+
+		.wrapper {
 			width: 100%;
 			height: 500px;
-			object-fit: cover;
-			// object-fit: contain;
-			background-color: white;
+			overflow: hidden;
 			@media (min-width: $breakpoint-large) {
-				height: 690px;
 				object-fit: cover;
-			}
-			.decal & {
-				height: 500px;
-				@media (min-width: $breakpoint-large) {
-					height: 470px;
+				height: 470px;
+				&.special {
+					height: 650px;
 				}
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				background-color: white;
+				transition: transform 300ms;
+				.decal & {
+					height: 500px;
+					@media (min-width: $breakpoint-large) {
+						height: 500px;
+					}
+				}
+			}
+			&:hover img {
+				transform: scale(1.2);
 			}
 		}
 	}
