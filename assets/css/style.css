@@ -302,7 +302,7 @@ footer .copyright #yearDisplay {
   justify-content: space-between;
   position: absolute;
   top: 25px;
-  right: 5px;
+  right: -3px;
   align-items: center;
   cursor: pointer;
 }
