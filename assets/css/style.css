@@ -888,11 +888,11 @@ footer .copyright #yearDisplay {
   height: 100%;
   background-color: white;
   object-fit: cover;
-  transition: transform 300ms ease-in-out;
+  transition: transform 200ms ease-in-out;
 }
 @media (min-width: 992px) {
   .works__left .wrapper:hover img {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 .works__right {
@@ -935,7 +935,7 @@ footer .copyright #yearDisplay {
   height: 100%;
   object-fit: cover;
   background-color: white;
-  transition: transform 300ms ease-in-out;
+  transition: transform 200ms ease-in-out;
 }
 .decal .works__right .wrapper img {
   height: 500px;
@@ -947,7 +947,7 @@ footer .copyright #yearDisplay {
 }
 @media (min-width: 992px) {
   .works__right .wrapper:hover img {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 
