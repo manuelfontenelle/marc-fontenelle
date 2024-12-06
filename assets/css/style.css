@@ -3,7 +3,7 @@
 .btn {
   border: 2px solid #ffffe3;
   background: none;
-  font-family: "Inter", sans-serif;
+  font-family: "GeneralSans-Variable", "Inter", arial, sans-serif;
   color: #ffffe3;
   border-radius: 50px;
   font-size: 15px;
@@ -39,7 +39,7 @@
 
 body {
   background-color: #171715;
-  font-family: "GeneralSans-Variable", "Inter", sans-serif;
+  font-family: "GeneralSans-Variable", "Inter", arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
 }
@@ -270,7 +270,7 @@ footer .copyright {
   font-weight: 600;
   font-size: 10px;
   line-height: 1.2em;
-  color: #6d6d6d;
+  color: #353535;
   display: block;
   text-transform: uppercase;
   margin: 30px 0 20px 0;
@@ -1142,7 +1142,7 @@ td {
 
 .menu-left {
   overflow: hidden;
-  background-color: #2a2a2a;
+  background-color: #171715;
   height: 100vh;
   width: 100vw;
   position: absolute;
@@ -1223,7 +1223,7 @@ td {
 form {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 10vh;
   width: 100%;
   color: #ffffe3;
   font-size: 16px;
@@ -1234,6 +1234,7 @@ form {
 }
 .message-block label {
   font-size: 17px;
+  font-weight: 600;
 }
 .message-block textarea {
   margin-top: 10px;
@@ -1252,7 +1253,7 @@ form {
   }
 }
 .email-block__label {
-  width: 115px;
+  width: 80px;
   font-weight: 600;
 }
 .email-block input {
@@ -1272,8 +1273,8 @@ textarea {
   font-size: inherit;
   font-family: inherit;
   font-weight: inherit;
-  background-color: #2a2a2a;
-  color: white;
+  background-color: #171715;
+  color: #ffffe3;
   border: none;
   outline: none;
 }
@@ -1284,12 +1285,14 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-  color: #6d6d6d;
+  color: #353535;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 textarea::placeholder {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .disabled-btn {

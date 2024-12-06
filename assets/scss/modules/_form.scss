@@ -20,7 +20,7 @@ form {
 	display: flex;
 	flex-direction: column;
 	// align-items: center;
-	margin-top: 50px;
+	margin-top: 10vh;
 	width: 100%;
 	color: $text-color;
 	font-size: 16px;
@@ -30,6 +30,7 @@ form {
 	margin-bottom: 25px;
 	label {
 		font-size: 17px;
+		font-weight: 600;
 	}
 	textarea {
 		margin-top: 10px;
@@ -46,7 +47,7 @@ form {
 	}
 	// justify-content: center;
 	&__label {
-		width: 115px;
+		width: 80px;
 		font-weight: 600;
 	}
 	input {
@@ -69,7 +70,7 @@ textarea {
 	font-weight: inherit;
 	// border: 1px var(--grey) solid;
 	background-color: $bg-color;
-	color: white;
+	color: $text-color;
 	// border-radius: 6px;
 	border: none;
 	outline: none;
@@ -82,11 +83,13 @@ textarea {
 input::placeholder,
 textarea::placeholder {
 	color: $grey;
+	font-size: 20px;
+	font-weight: 600;
 }
 
 textarea::placeholder {
 	font-weight: 600;
-	font-size: 25px;
+	font-size: 20px;
 }
 
 // button {
