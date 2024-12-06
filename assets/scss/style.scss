@@ -49,7 +49,7 @@
 		url("../fonts/GeneralSans-Variable.woff") format("woff"),
 		url("../fonts/GeneralSans-Variable.ttf") format("truetype");
 	font-weight: 200 700;
-	font-display: swap;
+	font-display: block;
 	font-style: normal;
 }
 /**
@@ -66,6 +66,6 @@
 		url("../fonts/GeneralSans-VariableItalic.woff") format("woff"),
 		url("../fonts/GeneralSans-VariableItalic.ttf") format("truetype");
 	font-weight: 200 700;
-	font-display: swap;
+	font-display: block;
 	font-style: italic;
 }
