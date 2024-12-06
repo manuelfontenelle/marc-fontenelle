@@ -140,6 +140,11 @@
 		margin-top: 15vh;
 		flex-direction: row;
 	}
+	&.marginTop {
+		@media (min-width: $breakpoint-large) {
+			margin-top: 25vh;
+		}
+	}
 	&.secondary {
 		margin-top: 5vh;
 		@media (min-width: $breakpoint-large) {

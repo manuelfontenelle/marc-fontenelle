@@ -527,6 +527,11 @@ footer .copyright #yearDisplay {
     flex-direction: row;
   }
 }
+@media (min-width: 992px) {
+  .imagesProjectContainer.marginTop {
+    margin-top: 25vh;
+  }
+}
 .imagesProjectContainer.secondary {
   margin-top: 5vh;
 }
