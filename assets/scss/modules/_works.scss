@@ -10,7 +10,7 @@
 	}
 }
 .title-cat {
-	font-size: 40px;
+	font-size: 17vw;
 	line-height: 0.9em;
 	text-transform: uppercase;
 	text-align: left;
@@ -20,7 +20,8 @@
 	letter-spacing: 3px;
 	@media (min-width: $breakpoint-large) {
 		margin: 25vh 0 10vh 0;
-		font-size: 50px;
+		// font-size: 50px;
+		font-size: 12vw;
 	}
 	&.no-margin {
 		margin: 7vh 0 7vh 0;
