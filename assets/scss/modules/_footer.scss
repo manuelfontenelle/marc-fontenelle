@@ -37,7 +37,7 @@ footer {
 					text-transform: uppercase;
 					color: $text-color;
 					text-decoration: none;
-					letter-spacing: 4px;
+					// letter-spacing: 4px;
 					opacity: 0.75;
 					position: relative;
 					padding: 20px 0px;
@@ -57,7 +57,7 @@ footer {
 		text-transform: uppercase;
 		margin: 30px 0 20px 0;
 		text-decoration: none;
-		letter-spacing: 1px;
+		// letter-spacing: 1px;
 		@media (min-width: $breakpoint-large) {
 			font-size: 16px;
 		}
