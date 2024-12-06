@@ -45,6 +45,11 @@ $.addEventListener("DOMContentLoaded", () => {
 		const randomProjectLink = document.getElementById("random-project-link")
 		if (randomProject != null) {
 			randomProject.textContent = (random, months[random].replaceAll("-", " "))
+
+			randomProject.setAttribute(
+				"href",
+				"./" + (random, months[random]) + ".html"
+			)
 			randomProjectLink.setAttribute(
 				"href",
 				"./" + (random, months[random]) + ".html"
