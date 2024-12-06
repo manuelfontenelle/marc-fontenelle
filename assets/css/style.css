@@ -1,10 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&display=swap");
 .btn {
-  border: 2px solid white;
+  border: 2px solid #ffffe3;
   background: none;
   font-family: "Inter", sans-serif;
-  color: white;
+  color: #ffffe3;
   border-radius: 50px;
   font-size: 15px;
   padding: 22px 37px;
@@ -1403,6 +1403,9 @@ header nav ul li a:before {
   .block-content_about .desc-about {
     width: 70%;
     margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 1.7em;
+    font-weight: 400;
   }
 }
 
