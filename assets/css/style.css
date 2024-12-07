@@ -796,7 +796,6 @@ footer .copyright #yearDisplay {
   font-weight: 600;
   margin: 14vh 0 7vh 0;
   color: #ffffe3;
-  letter-spacing: 3px;
 }
 @media (min-width: 992px) {
   .title-cat {
